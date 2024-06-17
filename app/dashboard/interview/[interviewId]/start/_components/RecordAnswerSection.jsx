@@ -26,15 +26,16 @@ function RecordAnswerSection({ mockInterviewQuestion, activeQuestionIndex, inter
        
     } = useSpeechRecognition();
 
-    useEffect(() => {
-        // Update userAnswer only when speech recognition is active and transcript changes
-        if (listening && transcript) {
-          setUserAnswer(transcript);
-        } else if (!listening) {
-          // Optionally, reset transcript when speech recognition stops
-          SpeechRecognition.resetTranscript;
-        }
-      }, [listening, transcript]);
+  useEffect(() => {
+    // Update userAnswer by appending the transcript only when speech recognition is active and transcript changes
+    if (listening && transcript) {
+        setUserAnswer(prevAns => prevAns + transcript);
+    } else if (!listening) {
+        // Optionally, reset transcript when speech recognition stops
+        SpeechRecognition.resetTranscript();
+    }
+}, [listening, transcript]);
+
 
     useEffect(() => {
         if (!listening && userAnswer?.length > 10) {
