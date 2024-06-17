@@ -32,7 +32,7 @@ function RecordAnswerSection({ mockInterviewQuestion, activeQuestionIndex, inter
         setUserAnswer(prevAns => prevAns + transcript);
     } else if (!listening) {
         // Optionally, reset transcript when speech recognition stops
-        SpeechRecognition.resetTranscript();
+        SpeechRecognition.resetTranscript;
     }
 }, [listening, transcript]);
 
