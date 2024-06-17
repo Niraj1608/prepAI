@@ -23,16 +23,16 @@ function AboutPage() {
           className="w-12 h-12 rounded-full mr-2 border border-gray-200 shadow-sm" // Added border and shadow styles
         />
         <div className="flex-grow items-center">  {/* Added flex-grow to expand content */}
-          <h3 className="text-lg font-semibold">John Doe</h3>
-          <p className="text-sm">Founder & CEO</p>
+          <h3 className="text-lg font-semibold">Niraj Parmar</h3>
+          <p className="text-sm">Student</p>
           <p className="text-sm flex items-center space-x-2">  {/* Added flex styles for social links */}
-            <a href="mailto:johndoe@example.com" className="text-blue-600 hover:text-blue-800">
-              johndoe@example.com
+            <a href="mailto:nirajprmr1608@gmail.com" className="text-blue-600 hover:text-blue-800">
+              niraprmr1608@gmail.com
             </a>
-            <a href="https://www.linkedin.com/in/johndoe/" className="text-blue-600 hover:text-blue-800">
+            <a href="https://www.linkedin.com/in//" className="text-blue-600 hover:text-blue-800">
             Linkedin
             </a>
-            <a href="https://twitter.com/johndoe" className="text-blue-600 hover:text-blue-800 ">
+            <a href="https://twitter.com/_niraj16" className="text-blue-600 hover:text-blue-800 ">
               Twitter
             </a>
           </p>
