@@ -30,14 +30,6 @@ git clone https://github.com/your-username/prepai.git
 cd prepai
 npm install
 
-### Running the Application
 
-To start the development server:
-
-```bash
-npm run dev
-
-### Building for Production
-To create a production build:
 
 
