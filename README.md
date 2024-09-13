@@ -29,6 +29,9 @@ Clone the repository and install the dependencies:
 git clone https://github.com/your-username/prepai.git
 cd prepai
 npm install
+npm run build
+npm run start
+
 
 
 
